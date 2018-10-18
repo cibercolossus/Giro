@@ -1,0 +1,472 @@
+2018-08-25 16:32:27 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'evidences' already exists in C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 167
+Stack Trace:
+#0 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(167): PDO->exec('CREATE TABLE `e...')
+#1 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\MysqlAdapter.php(298): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `e...')
+#2 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Plan\Plan.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(611): Phinx\Db\Table->executeActions(false)
+#8 C:\xampp\htdocs\Giro\vendor\cakephp\migrations\src\Table.php(91): Phinx\Db\Table->create()
+#9 C:\xampp\htdocs\Giro\config\Migrations\20180825161555_CreateEvidences.php(34): Migrations\Table->create()
+#10 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(125): CreateEvidences->change()
+#11 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateEvidences), 'up', false)
+#12 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateEvidences), 'up', false)
+#13 C:\xampp\htdocs\Giro\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20180825162859', false)
+#14 C:\xampp\htdocs\Giro\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\Giro\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\Giro\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\Giro\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\Giro\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\Giro\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\Giro\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 C:\xampp\htdocs\Giro\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 C:\xampp\htdocs\Giro\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-08-25 16:37:20 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'giro.inpections' doesn't exist in C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'inpections', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('inpections', Array)
+#2 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('inpections')
+#3 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\Giro\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 C:\xampp\htdocs\Giro\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\Giro\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'inpections', 'Inpections')
+#7 C:\xampp\htdocs\Giro\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Inpections')
+#8 C:\xampp\htdocs\Giro\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Inpections')
+#9 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Inpections', 0)
+#10 C:\xampp\htdocs\Giro\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('Inpections')
+#12 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\Giro\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\Giro\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-08-29 15:07:34 Error: [RuntimeException] Unknown command `cake serve`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'serve')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-08-29 16:04:33 Error: [RuntimeException] Unknown command `cake migration`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migration')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-08-29 16:29:36 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('CREATE TABLE `u...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(298): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `u...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#9 /var/www/html/Giro/config/Migrations/20180829160444_CreateUsers.php(74): Migrations\Table->create()
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateUsers->change()
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateUsers), 'up', false)
+#12 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateUsers), 'up', false)
+#13 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180829160444, false)
+#14 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-08-30 18:18:13 Error: [RuntimeException] Unknown command `cake migratios`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migratios')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-08-30 18:18:24 Error: [RuntimeException] Unknown command `cake migratins`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'migratins')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-09-03 14:17:42 Error: [PDOException] SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'departament_id' in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('CREATE TABLE `m...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(298): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `m...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#9 /var/www/html/Giro/config/Migrations/20180703140557_CreateMunicipalities.php(31): Migrations\Table->create()
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateMunicipalities->change()
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateMunicipalities), 'up', false)
+#12 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateMunicipalities), 'up', false)
+#13 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180903134754, false)
+#14 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-09-03 14:18:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('ALTER TABLE `mu...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Util/AlterInstructions.php(126): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `mu...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(518): Phinx\Db\Util\AlterInstructions->execute('ALTER TABLE `mu...', Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(877): Phinx\Db\Adapter\PdoAdapter->executeAlterSteps('municipalities', Object(Phinx\Db\Util\AlterInstructions))
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(477): Phinx\Db\Adapter\PdoAdapter->executeActions(Object(Phinx\Db\Table\Table), Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(406): Phinx\Db\Adapter\AdapterWrapper->executeActions(Object(Phinx\Db\Table\Table), Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(477): Phinx\Db\Adapter\TimedOutputAdapter->executeActions(Object(Phinx\Db\Table\Table), Array)
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(144): Phinx\Db\Adapter\AdapterWrapper->executeActions(Object(Phinx\Db\Table\Table), Array)
+#8 /var/www/html/Giro/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Phinx\Db\Plan\Plan->Phinx\Db\Plan\{closure}(Object(Phinx\Db\Plan\AlterTable), 'municipalities')
+#9 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(145): Cake\Collection\Collection->each(Object(Closure))
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#12 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#13 /var/www/html/Giro/config/Migrations/20180703140557_CreateMunicipalities.php(27): Migrations\Table->create()
+#14 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateMunicipalities->change()
+#15 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateMunicipalities), 'up', false)
+#16 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateMunicipalities), 'up', false)
+#17 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180903134754, false)
+#18 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#26 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#27 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#28 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#29 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#30 {main}
+
+
+2018-09-03 14:21:12 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'municipalities' already exists in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('CREATE TABLE `m...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(298): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `m...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#9 /var/www/html/Giro/config/Migrations/20180703140557_CreateMunicipalities.php(27): Migrations\Table->create()
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateMunicipalities->change()
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateMunicipalities), 'up', false)
+#12 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateMunicipalities), 'up', false)
+#13 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180903134754, false)
+#14 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-09-03 14:37:53 Error: [Symfony\Component\Console\Exception\CommandNotFoundException] Command "migrateclear" is not defined. in /var/www/html/Giro/vendor/symfony/console/Application.php on line 632
+Stack Trace:
+#0 /var/www/html/Giro/vendor/symfony/console/Application.php(226): Symfony\Component\Console\Application->find('migrateclear')
+#1 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrateclear')
+#4 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#5 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#6 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#7 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#8 {main}
+
+
+2018-09-03 16:17:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('ALTER TABLE `in...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Util/AlterInstructions.php(126): Phinx\Db\Adapter\PdoAdapter->execute('ALTER TABLE `in...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(518): Phinx\Db\Util\AlterInstructions->execute('ALTER TABLE `in...', Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(877): Phinx\Db\Adapter\PdoAdapter->executeAlterSteps('income', Object(Phinx\Db\Util\AlterInstructions))
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(477): Phinx\Db\Adapter\PdoAdapter->executeActions(Object(Phinx\Db\Table\Table), Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(406): Phinx\Db\Adapter\AdapterWrapper->executeActions(Object(Phinx\Db\Table\Table), Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(477): Phinx\Db\Adapter\TimedOutputAdapter->executeActions(Object(Phinx\Db\Table\Table), Array)
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(144): Phinx\Db\Adapter\AdapterWrapper->executeActions(Object(Phinx\Db\Table\Table), Array)
+#8 /var/www/html/Giro/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Phinx\Db\Plan\Plan->Phinx\Db\Plan\{closure}(Object(Phinx\Db\Plan\AlterTable), 'income')
+#9 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(145): Cake\Collection\Collection->each(Object(Closure))
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#12 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#13 /var/www/html/Giro/config/Migrations/20180903151746_CreateIncome.php(36): Migrations\Table->create()
+#14 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateIncome->change()
+#15 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateIncome), 'up', false)
+#16 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateIncome), 'up', false)
+#17 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180903161635, false)
+#18 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#26 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#27 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#28 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#29 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#30 {main}
+
+
+2018-09-03 16:18:28 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'income' already exists in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('CREATE TABLE `i...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(298): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `i...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#9 /var/www/html/Giro/config/Migrations/20180903151746_CreateIncome.php(36): Migrations\Table->create()
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateIncome->change()
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateIncome), 'up', false)
+#12 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateIncome), 'up', false)
+#13 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180903161635, false)
+#14 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-09-03 16:29:17 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'giro.military_notebook' doesn't exist in /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'military_notebo...', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('military_notebo...', Array)
+#2 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('military_notebo...')
+#3 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(673): Cake\ORM\Table->getSchema()
+#4 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'military_notebo...', 'MilitaryNoteboo...')
+#7 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('MilitaryNoteboo...')
+#8 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/BakeShell.php(273): Bake\Shell\Task\ModelTask->main('MilitaryNoteboo...')
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('MilitaryNoteboo...', 0)
+#10 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(518): Bake\Shell\BakeShell->all('MilitaryNoteboo...')
+#12 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-03 16:30:11 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'giro.passaports' doesn't exist in /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'passaports', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('passaports', Array)
+#2 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('passaports')
+#3 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(673): Cake\ORM\Table->getSchema()
+#4 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'passaports', 'Passaports')
+#7 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Passaports')
+#8 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Passaports')
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Passaports', 0)
+#10 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(518): Bake\Shell\BakeShell->all('Passaports')
+#12 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-03 16:30:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'giro.county_departures' doesn't exist in /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'county_departur...', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('county_departur...', Array)
+#2 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('county_departur...')
+#3 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(673): Cake\ORM\Table->getSchema()
+#4 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'county_departur...', 'CountyDeparture...')
+#7 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('CountyDeparture...')
+#8 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/BakeShell.php(273): Bake\Shell\Task\ModelTask->main('CountyDeparture...')
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('CountyDeparture...', 0)
+#10 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(518): Bake\Shell\BakeShell->all('CountyDeparture...')
+#12 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-03 16:48:08 Error: [PDOException] SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'departaments' already exists in /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php on line 167
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/PdoAdapter.php(167): PDO->exec('CREATE TABLE `d...')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/MysqlAdapter.php(298): Phinx\Db\Adapter\PdoAdapter->execute('CREATE TABLE `d...')
+#2 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\MysqlAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#3 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/TimedOutputAdapter.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#4 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Adapter/AdapterWrapper.php(349): Phinx\Db\Adapter\TimedOutputAdapter->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#5 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Plan/Plan.php(138): Phinx\Db\Adapter\AdapterWrapper->createTable(Object(Phinx\Db\Table\Table), Array, Array)
+#6 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(717): Phinx\Db\Plan\Plan->execute(Object(Migrations\CakeAdapter))
+#7 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Db/Table.php(611): Phinx\Db\Table->executeActions(false)
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Table.php(91): Phinx\Db\Table->create()
+#9 /var/www/html/Giro/config/Migrations/20180703140118_CreateDepartaments.php(21): Migrations\Table->create()
+#10 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager/Environment.php(125): CreateDepartaments->change()
+#11 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(CreateDepartaments), 'up', false)
+#12 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(CreateDepartaments), 'up', false)
+#13 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', 20180903161635, false)
+#14 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#22 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#23 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#24 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#25 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#26 {main}
+
+
+2018-09-07 14:10:22 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/html/Giro/config/Migrations/20180907140205_CreateUserVisities.php on line 32
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(315): Phinx\Migration\Manager->getMigrations('default')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', NULL, false)
+#2 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#10 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#12 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#13 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2018-09-07 14:11:02 Error: [ParseError] syntax error, unexpected '$table' (T_VARIABLE) in /var/www/html/Giro/config/Migrations/20180907140205_CreateUserVisities.php on line 33
+Stack Trace:
+#0 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Migration/Manager.php(315): Phinx\Migration\Manager->getMigrations('default')
+#1 /var/www/html/Giro/vendor/robmorgan/phinx/src/Phinx/Console/Command/Migrate.php(121): Phinx\Migration\Manager->migrate('default', NULL, false)
+#2 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/Giro/vendor/cakephp/migrations/src/Command/Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/Giro/vendor/symfony/console/Command/Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /var/www/html/Giro/vendor/symfony/console/Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/Giro/vendor/symfony/console/Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/Giro/vendor/symfony/console/Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#10 /var/www/html/Giro/vendor/cakephp/migrations/src/Shell/MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#12 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#13 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2018-09-26 16:06:34 Error: [RuntimeException] Unknown command `cake all`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'all')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-09-26 16:06:47 Error: [RuntimeException] Unknown command `cake all`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'all')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2018-09-26 22:33:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'giro.character' doesn't exist in /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'character', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('character', Array)
+#2 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('character')
+#3 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(673): Cake\ORM\Table->getSchema()
+#4 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'character', 'Character')
+#7 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Character')
+#8 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Bake\Shell\Task\ModelTask->main('Character')
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#12 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2018-09-26 22:35:25 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'giro.home_visity' doesn't exist in /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 131
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'home_visity', Array, Object(Cake\Database\Schema\TableSchema))
+#1 /var/www/html/Giro/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('home_visity', Array)
+#2 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(548): Cake\Database\Schema\CachedCollection->describe('home_visity')
+#3 /var/www/html/Giro/vendor/cakephp/cakephp/src/ORM/Table.php(673): Cake\ORM\Table->getSchema()
+#4 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'home_visity', 'HomeVisity')
+#7 /var/www/html/Giro/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('HomeVisity')
+#8 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(532): Bake\Shell\Task\ModelTask->main('HomeVisity')
+#9 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#10 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#11 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#12 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#13 {main}
+
+
+2018-09-27 19:10:39 Error: [RuntimeException] Unknown command `cake serve`. Run `cake --help` to get the list of valid commands. in /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 321
+Stack Trace:
+#0 /var/www/html/Giro/vendor/cakephp/cakephp/src/Console/CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'serve')
+#1 /var/www/html/Giro/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

@@ -1,0 +1,320 @@
+2018-09-03 20:36:56 Notice: Notice (8): Undefined index: Phones in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-26 22:30:58 Notice: Notice (8): Undefined index: Characters in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-26 22:31:26 Notice: Notice (8): Undefined index: Characters in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-26 22:31:45 Notice: Notice (8): Undefined index: Characters in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-26 22:32:10 Notice: Notice (8): Undefined index: Characters in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-26 22:35:55 Notice: Notice (8): Undefined index: Characters in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-27 17:06:02 Notice: Notice (8): Undefined index: Departures in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-27 17:06:02 Notice: Notice (8): Undefined index: Notebooks in [/var/www/html/Giro/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT/vendor/cakephp/bake/src/View/Helper/DocBlockHelper.php, line 238
+Twig_Template::getAttribute() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 679
+__TwigTemplate_e198e4fa5e6a2ecdf44d2022e702c54888d1f9612e9b6e6d545d1845260f70c9::doDisplay() - ROOT/tmp/cache/twigView/a4/a40ec151afc5417aec7087cc2a9f701876715209889061560d4c1374b0cf13e8.php, line 22
+Twig_Template::displayWithErrorHandling() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 432
+Twig_Template::display() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 403
+Twig_Template::render() - ROOT/vendor/twig/twig/lib/Twig/Template.php, line 411
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT/vendor/wyrihaximus/twig-view/src/View/TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT/vendor/cakephp/bake/src/View/BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT/vendor/cakephp/bake/src/Shell/Task/BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 971
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE/src/Collection/CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT/vendor/cakephp/bake/src/Shell/BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE/src/Console/CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 164
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-28 22:05:38 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/Giro/config/routes.php, line: 84
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/Giro/vendor/cakephp/cakephp/src/Core/functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 84
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 87
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+require - ROOT/config/routes.php, line 88
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE/src/Console/CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 150
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-09-28 22:15:29 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/Giro/config/routes.php, line: 84
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/Giro/vendor/cakephp/cakephp/src/Core/functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 84
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 87
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+require - ROOT/config/routes.php, line 88
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE/src/Console/CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 150
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-10-01 15:35:02 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/Giro/config/routes.php, line: 91
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/Giro/vendor/cakephp/cakephp/src/Core/functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 91
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 94
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+require - ROOT/config/routes.php, line 95
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE/src/Console/CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 150
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-10-01 16:10:14 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/Giro/config/routes.php, line: 91
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/Giro/vendor/cakephp/cakephp/src/Core/functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 91
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 94
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+require - ROOT/config/routes.php, line 95
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE/src/Console/CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 150
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-10-01 16:15:44 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/Giro/config/routes.php, line: 91
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/Giro/vendor/cakephp/cakephp/src/Core/functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 91
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 94
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+require - ROOT/config/routes.php, line 95
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE/src/Console/CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 150
+[main] - ROOT/bin/cake.php, line 12
+
+
+
+2018-10-01 16:18:51 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/Giro/config/routes.php, line: 91
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/Giro/vendor/cakephp/cakephp/src/Core/functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 91
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 94
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 1010
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1046
+require - ROOT/config/routes.php, line 95
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE/src/Console/CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE/src/Console/CommandRunner.php, line 150
+[main] - ROOT/bin/cake.php, line 12
+
+
+

@@ -1,0 +1,13 @@
+    .rectangulo {
+     margin-left: 20px; 
+     width: 3cm; 
+     height: 4cm; 
+     border: 3px solid #555;
+    }
+    body{
+        font-family: 'arial';
+        font-size: 13px;
+    }
+    th{
+
+    }
